@@ -1,4 +1,6 @@
-This project is a simple website that includes a header, footer, and various sections like a slider and main content area. The header and footer are included dynamically using JavaScript for easy maintenance and consistency across all pages.
+This project is a simple website that includes a header, footer, and various sections like a slider and main content area.
+The header and footer are included dynamically using JavaScript for easy maintenance and consistency across all pages.
+
 project-root/
 ├── css/
 │ └── styles.css
@@ -18,10 +20,6 @@ project-root/
 ├── README.md
 └── slider.html
 
-bash
-Copy code
-
-## How to Use
 
 ### 1. Clone the Repository
 
