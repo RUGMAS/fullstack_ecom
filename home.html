@@ -6,8 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
         body {
-            background-color: #6699CC; /* This is a grey-blue color */
-            color: #FFFFFF; /* Optional: sets the text color to white for better contrast */
+            background-color: #6699CC; /* Grey-blue background color */
+            color: #FFFFFF; /* Sets the text color to white for better contrast */
+            margin: 0; /* Removes default margin */
+        }
+        #containerSlider {
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+        #containerSlider img {
+            width: 100%;
+            height: 140%;
+            text-align: center;
+            align-content: center;
+        }
+        @media(max-width: 732px) {
+            #containerSlider img {
+                height: 12em;
+            }
+        }
+        @media(max-width: 500px) {
+            #containerSlider img {
+                height: 10em;
+            }
         }
     </style>
     <!-- favicon -->
@@ -15,110 +39,137 @@
     <link rel="stylesheet" href="css/header.css">
     <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <title>Urban Boutique</title>
 </head>
 <body>
-    
     <header>
         <section>
             <!-- MAIN CONTAINER -->
             <div id="container">
                 <!-- SHOP NAME -->
                 <div id="shopName"><a href="index.html"> <b>Urban</b>Boutique</a></div>
-                    <!-- COLLCETIONS ON WEBSITE -->
-                    <div id="collection">
-                        <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
-                        <div id="accessories"><a href="accessories.html"> ACCESSORIES </a></div>
-                    </div>
-                    <!-- SEARCH SECTION -->
-                    <div id="search">
-                        <i class="fas fa-search search"></i>
-                        <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
-                    </div>
-                    <!-- USER SECTION (CART AND USER ICON) -->
-                    <div id="user">
-                        <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
-                        <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
-                    </div>
+                <!-- COLLECTIONS ON WEBSITE -->
+                <div id="collection">
+                    <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
+                    <div id="accessories"><a href="accessories.html"> ACCESSORIES </a></div>
+                </div>
+                <!-- SEARCH SECTION -->
+                <div id="search">
+                    <i class="fas fa-search search"></i>
+                    <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
+                </div>
+                <!-- USER SECTION (CART AND USER ICON) -->
+                <div id="user">
+                    <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+                    <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
+                </div>
             </div>
-
         </section>
     </header>
-    <br><br><br>
-    <html lang="en">
+    <section>
+        <div id="containerSlider">
+            <div id="slidingImage"><img src="img/img1.png" alt="image1"></div>
+            <div id="slidingImage"><img src="img/img2.png" alt="image2"></div>
+            <div id="slidingImage"><img src="img/img3.png" alt="image3"></div>
+            <div id="slidingImage"><img src="img/img4.png" alt="image4"></div>
+        </div>
+    </section>
+
+    <body>
+    
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title> CONTENT | E-COMMERCE WEBSITE BY EDYODA </title>
+            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+            <!-- favicon -->
+            <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+        
+            <link rel="stylesheet" href="css/content.css">
+        
+        </head>
+        <body>
+            <div id="mainContainer">
+        
+                <h1> clothing for men and women </h1>
+                <div id="containerClothing">
+                    <!-- JS rendered code -->
+                </div>
+        
+                <h1> accessories for men and women </h1>
+                <div id="containerAccessories">
+                    <!-- JS rendered code -->
+                </div>
+            </div>
+        </body>
+        <script src="content.js"></script>
+    </body>
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> CONTENT | E-COMMERCE WEBSITE BY EDYODA </title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <!-- favicon -->
-        <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
-    
-        <link rel="stylesheet" href="css/content.css">
-    
+        <link rel="stylesheet" href="css/footer.css">
     </head>
+    
     <body>
-        <div id="mainContainer">
-    
-            <h1> clothing for men and women </h1>
-            <div id="containerClothing">
-                <!-- JS rendered code -->
-            </div>
-    
-            <h1> accessories for men and women </h1>
-            <div id="containerAccessories">
-                <!-- JS rendered code -->
-            </div>
-        </div>
+        <footer>
+            <section>    
+                <div id="containerFooter">
+                    
+                    <div id="webFooter">
+                        <h3> online store </h3>
+                        <p> men clothing </p>
+                        <p> women clothing </p>
+                        <p> men accessories </p>
+                        <p> women accessories </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> helpful link </h3>
+                        <p> home </p>
+                        <p> about </p>
+                        <p> contact </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> partners </h3>
+                        <p> zara </p>
+                        <p> pantaloons </p>
+                        <p> levis </p>
+                        <p> gucci </p>
+                        <p> + many more </p>
+                    </div>
+                    <div id="webFooter">
+                        <h3> address </h3>
+                        <p> building 101 </p>
+                        <p> pathanamthitta </p>
+                        <p> Koodal </p>
+                        <p> India </p>
+                    </div>
+                </div>
+                <div id="credit"><a href="https://www.linkedin.com/in/rugma-s-0130341aa/"> 💻 Rugma S </a></div>
+            </section>
+        </footer>
     </body>
+    <script>
+        $(document).ready(function() {
+            $('#containerSlider').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
     <script src="content.js"></script>
-</body>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/footer.css">
-</head>
-
-<body>
-    <footer>
-        <section>    
-            <div id="containerFooter">
-                
-                <div id="webFooter">
-                    <h3> online store </h3>
-                    <p> men clothing </p>
-                    <p> women clothing </p>
-                    <p> men accessories </p>
-                    <p> women accessories </p>
-                </div>
-                <div id="webFooter">
-                    <h3> helpful link </h3>
-                    <p> home </p>
-                    <p> about </p>
-                    <p> contact </p>
-                </div>
-                <div id="webFooter">
-                    <h3> partners </h3>
-                    <p> zara </p>
-                    <p> pantaloons </p>
-                    <p> levis </p>
-                    <p> gucci </p>
-                    <p> + many more </p>
-                </div>
-                <div id="webFooter">
-                    <h3> address </h3>
-                    <p> building 101 </p>
-                    <p> pathanamthitta </p>
-                    <p> Koodal </p>
-                    <p> India </p>
-                </div>
-            </div>
-            <div id="credit"><a href="https://www.linkedin.com/in/rugma-s-0130341aa/"> 💻 Rugma S </a></div>
-        </section>
-    </footer>
 </body>
 </html>
